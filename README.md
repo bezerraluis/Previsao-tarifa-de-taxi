@@ -1,30 +1,51 @@
-# Previsao tarifa de taxi
+# Taxi fare prediction
  
- Realizado a análise exploratória e e criado modelo para previsão da tarifa de corridas de taxi em NY 
+ An exploratory analysis was carried out and a model was created to forecast the taxi fares in NY
 
 
-# [Projeto 3 :  Previsão do valor da tarifa para corridas de taxi](https://github.com/bezerraluis/Luis-Paulo-Bezerra/blob/master/Projects/corrida_taxi.ipynb)
+# [Project :  Taxi fare prediction](https://github.com/bezerraluis/Luis-Paulo-Bezerra/blob/master/Projects/corrida_taxi.ipynb)
  
  ![taxi](https://github.com/bezerraluis/Luis-Paulo-Bezerra/blob/master/images/taxi.jpg)
  
+ 
+ 
+ # Data fields
 
-1.A base de dados foi extraída desta competição do Kaggle: https://www.kaggle.com/c/new-york-city-taxi-fare-prediction/overview. 
+ID
+key - Unique string identifying each row in both the training and test sets. Comprised of pickup_datetime plus a unique integer, but this doesn't matter, it should just be used as a unique ID field. Required in your submission CSV. Not necessarily needed in the training set, but could be useful to simulate a 'submission file' while doing cross-validation within the training set.
+
+## Features
+
+pickup_datetime - timestamp value indicating when the taxi ride started.
+
+pickup_longitude - float for longitude coordinate of where the taxi ride started.
+
+pickup_latitude - float for latitude coordinate of where the taxi ride started.
+
+dropoff_longitude - float for longitude coordinate of where the taxi ride ended.
+
+dropoff_latitude - float for latitude coordinate of where the taxi ride ended.
+
+passenger_count - integer indicating the number of passengers in the taxi ride.
+ 
+
+1.The database was extracted from this Kaggle competition: https://www.kaggle.com/c/new-york-city-taxi-fare-prediction/overview. 
 
 
-2.Nesta competição a tarefa de prever o valor da tarifa (inclusive pedágios) para uma corrida de táxi em Nova Iorque, dado os locais de partida e destino. Embora você possa obter uma estimativa básica baseada apenas na distância entre os dois pontos, isso resultará em um RMSE de 5 a 8, dependendo do modelo utilizado. O  desafio é ter resultados melhores do que esses usando técnicas de aprendizagem de máquina.
+2.In this competition the task of predicting the fare amount (including tolls) for a taxi ride in New York, given the places of departure and destination. Although you can obtain a basic estimate based only on the distance between the two points, this will result in an RMSE of 5 to 8, depending on the model used. The challenge is to have better results than these using machine learning techniques.
 
-3. Base da dados com 55 milhões de registro, então o primeiro passo foi criar uma amostra com 250 mil registro para realizar as análises e criar os modelos.
+3. Database with 55 million records, so the first step was to create a sample with 250,000 records to perform the analyzes and create the models.
 
-4. Realizar tratamento dos dados 
+4. Perform data processing
 
-5. Realizar análise exploratória 
+5.Perform exploratory analysis 
 
-6. Realizar criação de novas variáveis 
+6. Perform creation of new variables
 
-7.criação da baseline
+7. baseline creation
 
-8. Realizar Cross Validation
+8. Perform Cross Validation
 
-9.Tunar hiper parametros
+9.Tuning hyper parameters
 
-10.Escolher melhor modelo com os parametros otimizados 
+10. Choosing the best model with the optimized parameters
